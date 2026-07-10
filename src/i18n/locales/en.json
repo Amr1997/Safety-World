@@ -1,0 +1,77 @@
+{
+  "hero": {
+    "eyebrow": "Firefighting & Land Rescue Equipment",
+    "title": "Safety World",
+    "subtitle": "The Egyptian Company for Import, Export & Supplies",
+    "experience": "Over 20 years supplying firefighting and land rescue equipment across Egypt.",
+    "cta": "Explore our range",
+    "contact": "Get in touch",
+    "scrollToStory": "Scroll to about us"
+  },
+  "story": {
+    "label": "About us",
+    "title": "Built on decades of field experience",
+    "p1": "We specialize in supplying firefighting and land rescue equipment and have over 20 years of experience in the field.",
+    "p2": "Our company represents leading American and European manufacturers, providing firefighting suits and their accessories, fire hoses, nozzles, pumps, searchlights, dividing & collecting breeching, chainsaws for cutting wood, metal, and concrete, as well as firefighting foam concentrates.",
+    "p3": "Our company also employs highly qualified technical specialists who provide professional training on the operation and maintenance of all firefighting and land rescue equipment."
+  },
+  "capabilities": {
+    "label": "What we supply",
+    "title": "Complete firefighting solutions",
+    "subtitle": "American and European agency for essential land rescue equipment.",
+    "items": {
+      "suits": "Firefighting suits & accessories",
+      "hoses": "Fire hoses",
+      "nozzles": "Nozzles",
+      "pumps": "Pumps",
+      "searchlights": "Searchlights",
+      "breeching": "Dividing & collecting breeching",
+      "chainsaws": "Chainsaws for wood, metal & concrete",
+      "foam": "Firefighting foam concentrates"
+    }
+  },
+  "products": {
+    "label": "Product range",
+    "title": "Equipment we supply",
+    "subtitle": "A selection from our firefighting and land rescue portfolio.",
+    "itemAlt": "Firefighting and rescue equipment — item {{index}}"
+  },
+  "reach": {
+    "label": "Our reach",
+    "title": "Trusted by Civil Protection Directorates",
+    "description": "Over the years we have successfully supplied a complete range of firefighting and rescue equipment to numerous Civil Protection Directorates across Egypt, with a strong commitment to quality and reliability.",
+    "directorates": {
+      "giza": "Giza",
+      "qalyubia": "Qalyubia",
+      "gharbia": "Gharbia",
+      "sharqia": "Sharqia",
+      "minya": "Minya",
+      "sohag": "Sohag"
+    },
+    "training": {
+      "label": "Technical expertise",
+      "title": "Training & maintenance",
+      "description": "Our company employs highly qualified technical specialists who provide professional training on the operation and maintenance of all firefighting and land rescue equipment."
+    }
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Contact us",
+    "email": "Email",
+    "phone": "Phone",
+    "cta": "Send an email"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "legal": "The Egyptian Company for Import, Export & Supplies (Safety World)"
+  },
+  "lang": {
+    "switch": "Switch language",
+    "en": "English",
+    "ar": "العربية"
+  },
+  "a11y": {
+    "logo": "Safety World logo",
+    "langSwitcher": "Language switcher"
+  }
+}

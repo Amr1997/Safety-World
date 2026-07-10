@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-arabic: "IBM Plex Sans Arabic", "Plus Jakarta Sans", system-ui, sans-serif;
+
+  --color-ink: #0c0c0c;
+  --color-ink-muted: #5c5c5c;
+  --color-surface: #f7f5f2;
+  --color-surface-elevated: #ffffff;
+  --color-accent: #f5821f;
+  --color-accent-soft: #fef3e8;
+  --color-border: #e8e4de;
+  --color-border-dark: #2a2a2a;
+
+  --shadow-soft: 0 4px 24px -4px rgb(12 12 12 / 0.08);
+  --shadow-card: 0 12px 40px -12px rgb(12 12 12 / 0.12);
+}
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-surface text-ink antialiased;
+    font-family: var(--font-sans);
+  }
+
+  html[dir="rtl"] body {
+    font-family: var(--font-arabic);
+  }
+
+  ::selection {
+    background: color-mix(in srgb, var(--color-accent) 25%, transparent);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .section-padding {
+    @apply px-5 py-24 md:px-10 md:py-32 lg:px-16 xl:px-24;
+  }
+
+  .container-editorial {
+    @apply mx-auto max-w-7xl;
+  }
+}
