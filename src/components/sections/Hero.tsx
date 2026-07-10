@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import logo from "@assets/brand/Safety World Logo.png";
+import SoftAurora from "@/components/SoftAurora/SoftAurora";
 import { Button } from "@/components/ui/button";
 import { LanguageSwitcher } from "@/components/layout/LanguageSwitcher";
 import { scrollToSection } from "@/lib/utils";
@@ -14,16 +15,26 @@ export function Hero() {
       id="hero"
       className="relative flex min-h-[100svh] flex-col overflow-hidden bg-ink"
     >
-      <div
-        className="pointer-events-none absolute inset-0 opacity-[0.04]"
-        style={{
-          backgroundImage:
-            "linear-gradient(var(--color-accent) 1px, transparent 1px), linear-gradient(90deg, var(--color-accent) 1px, transparent 1px)",
-          backgroundSize: "80px 80px",
-        }}
-      />
+      <div className="absolute inset-0">
+        <SoftAurora
+          speed={0.6}
+          scale={1.5}
+          brightness={0.85}
+          color1="#fef3e8"
+          color2="#f5821f"
+          noiseFrequency={2.5}
+          noiseAmplitude={1.0}
+          bandHeight={0.45}
+          bandSpread={1.0}
+          octaveDecay={0.1}
+          layerOffset={0}
+          colorSpeed={0.8}
+          enableMouseInteraction
+          mouseInfluence={0.25}
+        />
+      </div>
 
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-ink/20 to-ink" />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-ink/30 via-ink/60 to-ink" />
 
       <div className="container-editorial relative z-20 w-full px-5 pt-8 md:px-10 md:pt-10 lg:px-16 xl:px-24">
         <motion.div
