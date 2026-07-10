@@ -51,7 +51,7 @@ export function BrandStory() {
           </AnimateIn>
 
           <div className="flex flex-col gap-8 lg:col-span-7 lg:pt-4">
-            {[t("story.p1"), t("story.p2"), t("story.p3")].map((paragraph, i) => (
+            {[t("story.p1"), t("story.p2"), t("story.p3"), t("story.p4")].map((paragraph, i) => (
               <AnimateIn key={i} delay={0.15 + i * 0.08}>
                 <p className="text-lg leading-[1.8] text-ink-muted md:text-xl">
                   {paragraph}

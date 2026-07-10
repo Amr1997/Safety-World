@@ -13,7 +13,8 @@
     "title": "Built on decades of field experience",
     "p1": "We specialize in supplying firefighting and land rescue equipment and have over 20 years of experience in the field.",
     "p2": "Our company represents leading American and European manufacturers, providing firefighting suits and their accessories, fire hoses, nozzles, pumps, searchlights, dividing & collecting breeching, chainsaws for cutting wood, metal, and concrete, as well as firefighting foam concentrates.",
-    "p3": "Our company also employs highly qualified technical specialists who provide professional training on the operation and maintenance of all firefighting and land rescue equipment."
+    "p3": "Our company has extensive supply experience with most Civil Protection Directorates nationwide, including — but not limited to — the General Directorate of Civil Protection, the Cairo & Giza Directorate, Qalyubia, Monufia, Sharqia, Gharbia, Dakahlia, Beheira, Port Said, Ismailia, Beni Suef, Minya, Sohag, Luxor, and others.",
+    "p4": "Our company also employs highly qualified technical specialists who provide professional training on the operation and maintenance of all firefighting and land rescue equipment."
   },
   "capabilities": {
     "label": "What we supply",
@@ -39,14 +40,22 @@
   "reach": {
     "label": "Our reach",
     "title": "Trusted by Civil Protection Directorates",
-    "description": "Over the years we have successfully supplied a complete range of firefighting and rescue equipment to numerous Civil Protection Directorates across Egypt, with a strong commitment to quality and reliability.",
+    "description": "Our company has extensive supply experience with most Civil Protection Directorates nationwide, including — but not limited to:",
     "directorates": {
-      "giza": "Giza",
-      "qalyubia": "Qalyubia",
-      "gharbia": "Gharbia",
+      "general": "General Directorate of Civil Protection",
+      "cairoGiza": "Cairo & Giza Civil Protection Directorate",
+      "qalyubia": "Qalyubia Civil Protection Directorate",
+      "monufia": "Monufia",
       "sharqia": "Sharqia",
+      "gharbia": "Gharbia",
+      "dakahlia": "Dakahlia",
+      "beheira": "Beheira",
+      "portSaid": "Port Said",
+      "ismailia": "Ismailia",
+      "beniSuef": "Beni Suef",
       "minya": "Minya",
-      "sohag": "Sohag"
+      "sohag": "Sohag",
+      "luxor": "Luxor"
     },
     "training": {
       "label": "Technical expertise",

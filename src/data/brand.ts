@@ -23,10 +23,18 @@ export const capabilities = [
 ] as const;
 
 export const directorates = [
-  { key: "giza" },
+  { key: "general" },
+  { key: "cairoGiza" },
   { key: "qalyubia" },
-  { key: "gharbia" },
+  { key: "monufia" },
   { key: "sharqia" },
+  { key: "gharbia" },
+  { key: "dakahlia" },
+  { key: "beheira" },
+  { key: "portSaid" },
+  { key: "ismailia" },
+  { key: "beniSuef" },
   { key: "minya" },
   { key: "sohag" },
+  { key: "luxor" },
 ] as const;
