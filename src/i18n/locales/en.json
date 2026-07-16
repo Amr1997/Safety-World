@@ -35,7 +35,7 @@
     "label": "Product range",
     "title": "Equipment we supply",
     "subtitle": "A selection from our firefighting and land rescue portfolio.",
-    "itemAlt": "Firefighting and rescue equipment — item {{index}}"
+    "itemAlt": "{{brand}} — item {{index}}"
   },
   "reach": {
     "label": "Our reach",

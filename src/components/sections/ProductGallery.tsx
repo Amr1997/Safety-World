@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { products, type ProductLayout } from "@/data/products";
+import { productBrands, type ProductLayout } from "@/data/products";
 import { AnimateIn } from "@/components/AnimateIn";
 import { SectionHeading } from "@/components/SectionHeading";
 import { cn } from "@/lib/utils";
@@ -15,14 +15,17 @@ function ProductTile({
   id,
   image,
   layout,
+  brand,
   index,
 }: {
   id: string;
   image: string;
   layout: ProductLayout;
+  brand: string;
   index: number;
 }) {
   const { t } = useTranslation();
+  const alt = t("products.itemAlt", { brand, index: id });
 
   return (
     <AnimateIn
@@ -38,14 +41,12 @@ function ProductTile({
       >
         <img
           src={image}
-          alt={t("products.itemAlt", { index: id })}
+          alt={alt}
           loading="lazy"
           decoding="async"
           className="h-full w-full object-contain p-4 transition-transform duration-700 group-hover:scale-[1.02] md:p-6"
         />
-        <figcaption className="sr-only">
-          {t("products.itemAlt", { index: id })}
-        </figcaption>
+        <figcaption className="sr-only">{alt}</figcaption>
       </figure>
     </AnimateIn>
   );
@@ -65,9 +66,26 @@ export function ProductGallery() {
           />
         </AnimateIn>
 
-        <div className="mt-16 grid auto-rows-[minmax(240px,auto)] grid-cols-1 gap-4 md:grid-cols-4 md:gap-5">
-          {products.map((product, index) => (
-            <ProductTile key={product.id} {...product} index={index} />
+        <div className="mt-16 space-y-16 md:space-y-20">
+          {productBrands.map((brand) => (
+            <div key={brand.id}>
+              <AnimateIn>
+                <h3 className="font-display text-2xl tracking-tight text-ink md:text-3xl">
+                  {brand.name}
+                </h3>
+              </AnimateIn>
+
+              <div className="mt-6 grid auto-rows-[minmax(240px,auto)] grid-cols-1 gap-4 md:mt-8 md:grid-cols-4 md:gap-5">
+                {brand.products.map((product, index) => (
+                  <ProductTile
+                    key={`${brand.id}-${product.id}`}
+                    {...product}
+                    brand={brand.name}
+                    index={index}
+                  />
+                ))}
+              </div>
+            </div>
           ))}
         </div>
       </div>
